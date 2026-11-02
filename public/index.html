@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart Management</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+    }
+    ul {
+      margin-top: 15px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    code {
+      background: #eef2f7;
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #c0392b;
+      font-size: 0.95em;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      background: #27ae60;
+      color: white;
+      border-radius: 4px;
+      font-size: 0.85em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="badge">Node.js FS Module</span>
+    <h1>Shopping Cart Management Web Application</h1>
+    <p>Welcome to the <strong>Shopping Cart Management Web Application</strong> homepage, served statically using the built-in Node.js <code>fs</code> module.</p>
+    
+    <h2>Application Features</h2>
+    <ul>
+      <li><strong>Part A:</strong> Native Node.js HTTP Server running on <code>http://localhost:3000</code></li>
+      <li><strong>Part B:</strong> Express.js REST API Server running on <code>http://localhost:4000</code></li>
+      <li>In-memory JavaScript array storage for shopping cart items</li>
+      <li>Full CRUD operations (Create, Read, Update, Delete)</li>
+    </ul>
+
+    <h2>Available Endpoints (HTTP Server - Port 3000)</h2>
+    <ul>
+      <li><code>GET /</code> - Welcome HTML message</li>
+      <li><code>GET /cart</code> - View all cart items in JSON format</li>
+      <li><code>GET /about</code> - Application details</li>
+      <li><code>GET /home</code> - Serves this static HTML file via FS module</li>
+      <li><code>POST /add-to-cart</code> - Add a new item to cart</li>
+    </ul>
+  </div>
+</body>
+</html>
+
